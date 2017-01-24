@@ -1,0 +1,485 @@
+fileFormatVersion: 2
+guid: e352d31e147abc845bc5634a4a5386ad
+timeCreated: 1485233715
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: btn_empty
+    21300002: btn_share
+    21300004: btn_sound_off
+    21300006: btn_home
+    21300008: btn_rate
+    21300010: btn_shop
+    21300012: btn_like
+    21300014: btn_tutorial
+    21300016: btn_board
+    21300018: btn_sound
+    21300020: btn_replay
+    21300022: btn_back
+    21300024: btn_play
+    21300026: ui_pane_black
+    21300028: ui_pane_yealow
+    21300030: ui_circle
+    21300032: ui_rect_circle
+    21300034: ui_10px
+    21300036: ui_gem
+    21300038: ui_check
+    21300040: ui_circle_full
+    21300042: ui_logo
+    21300044: ui_black_twen
+    21300046: ui_black_0
+    21300048: ui_black_1
+    21300050: ui_black_2
+    21300052: ui_black_3
+    21300054: ui_black_4
+    21300056: ui_black_5
+    21300058: ui_hand
+    21300060: ui_circle_dot
+    21300062: ui_noti0
+    21300064: ui_noti1
+    21300066: btn_setting
+    21300068: btn_unpause
+    21300070: btn_pause
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: btn_empty
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 5
+        width: 133
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_share
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 5
+        width: 130
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_sound_off
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 152
+        width: 134
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_home
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 154
+        width: 133
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_rate
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 302
+        width: 127
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_shop
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 302
+        width: 130
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_like
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 451
+        width: 127
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_tutorial
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 453
+        width: 133
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_board
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 602
+        width: 133
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_sound
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 602
+        width: 134
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_replay
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 28
+        width: 288
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_back
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 126
+        width: 93
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_play
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 126
+        width: 176
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ui_pane_black
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 254
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 20, z: 10, w: 10}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ui_pane_yealow
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 340
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 20, z: 10, w: 10}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ui_circle
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 420
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ui_rect_circle
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 523
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ui_10px
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 522
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ui_gem
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 595
+        width: 128
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ui_check
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 673
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ui_circle_full
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 523
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ui_logo
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 757
+        width: 360
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ui_black_twen
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 14
+        width: 191
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ui_hand
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 359
+        width: 150
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ui_circle_dot
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 738
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ui_noti0
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 664
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ui_noti1
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 675
+        width: 12
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_setting
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 140
+        width: 133
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_unpause
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 320
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: btn_pause
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 473
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
