@@ -40,7 +40,14 @@ namespace SlowHand
             gameProfile = GamePreferences.initProfile();
             AudioManager.SetSFXVolume(gameProfile.SoundVolume);
             GameConstants.Instance.InitRandomTheme();
-            stateMachine.PushState(GSResult.Instance);
+            if (GamePreferences.profile.EnableTutorial)
+            {
+                stateMachine.PushState(GSTutorial.Instance);
+            }
+            else
+            {
+                stateMachine.PushState(GSResult.Instance);
+            }
         }
 
         // Update is called once per frame

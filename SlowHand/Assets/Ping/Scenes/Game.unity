@@ -770,7 +770,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: 0
   updateGame: 1
-  countRescue: 0
   cameraShake: {fileID: 2063753357}
   camVel: {x: 0, y: 0, z: 0}
   distanceRescueVel: {x: 0, y: -25, z: 0}
@@ -789,7 +788,6 @@ MonoBehaviour:
   botRight: {fileID: 291436661}
   beginLevelGap: {fileID: 1815835066}
   startSpikeGap: {fileID: 1664335080}
-  currentLevel: 0
   textScore: {fileID: 665637152}
   textStar: {fileID: 1165043871}
   checkpointClip: {fileID: 8300000, guid: 5b14f123e33fee84fa8792d8073d44cd, type: 3}
@@ -3654,6 +3652,7 @@ GameObject:
   - 224: {fileID: 381708325}
   - 222: {fileID: 381708327}
   - 114: {fileID: 381708326}
+  - 114: {fileID: 381708328}
   m_Layer: 5
   m_Name: Circle
   m_TagString: Untagged
@@ -3677,7 +3676,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 60, y: 45}
-  m_SizeDelta: {x: 86, y: 86}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &381708326
 MonoBehaviour:
@@ -3712,6 +3711,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 381708324}
+--- !u!114 &381708328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 381708324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4650aaeee6d650489a51c89983df201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 100
+  currentSize: 60
+  maxSize: 120
 --- !u!1 &386767736
 GameObject:
   m_ObjectHideFlags: 0
@@ -4116,7 +4129,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 505654a902e36d64fb6a62de11a8358f, type: 3}
-  m_Color: {r: 0.2119377, g: 0.58823526, b: 0.4715539, a: 1}
+  m_Color: {r: 0.13056876, g: 0.77205884, b: 0.57314724, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!50 &442765086
@@ -4186,7 +4199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &476549855
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7463,6 +7476,7 @@ GameObject:
   - 224: {fileID: 807108080}
   - 222: {fileID: 807108082}
   - 114: {fileID: 807108081}
+  - 114: {fileID: 807108083}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -7526,6 +7540,58 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 807108079}
+--- !u!114 &807108083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 807108079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 807108081}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2014896762}
+        m_MethodName: onRescue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &820907865
 GameObject:
   m_ObjectHideFlags: 0
@@ -12735,6 +12801,7 @@ GameObject:
   - 224: {fileID: 1281156609}
   - 222: {fileID: 1281156611}
   - 114: {fileID: 1281156610}
+  - 114: {fileID: 1281156612}
   m_Layer: 5
   m_Name: Circle
   m_TagString: Untagged
@@ -12793,6 +12860,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1281156608}
+--- !u!114 &1281156612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1281156608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4650aaeee6d650489a51c89983df201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 100
+  currentSize: 0
+  maxSize: 120
 --- !u!1 &1294412024
 GameObject:
   m_ObjectHideFlags: 0
@@ -16887,6 +16968,7 @@ GameObject:
   - 224: {fileID: 1406235565}
   - 222: {fileID: 1406235567}
   - 114: {fileID: 1406235566}
+  - 114: {fileID: 1406235568}
   m_Layer: 5
   m_Name: Circle
   m_TagString: Untagged
@@ -16945,6 +17027,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1406235564}
+--- !u!114 &1406235568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1406235564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4650aaeee6d650489a51c89983df201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 100
+  currentSize: 0
+  maxSize: 120
 --- !u!1 &1429293301
 GameObject:
   m_ObjectHideFlags: 0
@@ -17060,6 +17156,7 @@ GameObject:
   - 224: {fileID: 1430723283}
   - 222: {fileID: 1430723285}
   - 114: {fileID: 1430723284}
+  - 114: {fileID: 1430723286}
   m_Layer: 5
   m_Name: Circle
   m_TagString: Untagged
@@ -17083,7 +17180,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 60, y: 45}
-  m_SizeDelta: {x: 86, y: 86}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1430723284
 MonoBehaviour:
@@ -17118,6 +17215,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1430723282}
+--- !u!114 &1430723286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1430723282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4650aaeee6d650489a51c89983df201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 100
+  currentSize: 60
+  maxSize: 120
 --- !u!1 &1441083908
 GameObject:
   m_ObjectHideFlags: 0
@@ -17503,7 +17614,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 157}
+  m_AnchoredPosition: {x: 0, y: 200}
   m_SizeDelta: {x: -120, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1497070593
@@ -17536,7 +17647,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 'HOLD THE
 
@@ -18486,7 +18597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1661641076
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20172,6 +20283,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtGem: {fileID: 147333130}
+  fill: {fileID: 1086838571}
+  timeLive: 3
 --- !u!1 &2031304001
 GameObject:
   m_ObjectHideFlags: 0
@@ -20318,6 +20431,9 @@ MonoBehaviour:
   sprite:
   - {fileID: 442765084}
   - {fileID: 2111426230}
+  speedColor: 20
+  formColor: {r: 0.17371324, g: 0.875, b: 0.6575468, a: 1}
+  toColor: {r: 1, g: 0.43448272, b: 0, a: 1}
 --- !u!1 &2039364549
 GameObject:
   m_ObjectHideFlags: 0
@@ -20689,7 +20805,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 505654a902e36d64fb6a62de11a8358f, type: 3}
-  m_Color: {r: 0.2119377, g: 0.58823526, b: 0.4715539, a: 1}
+  m_Color: {r: 1, g: 0.43448272, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!50 &2111426232
@@ -20966,7 +21082,7 @@ ParticleSystem:
   moveWithTransform: 1
   autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: -1967460149
+  randomSeed: -734938764
   InitialModule:
     serializedVersion: 2
     enabled: 1
